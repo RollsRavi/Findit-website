@@ -1,0 +1,390 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Crete Round', serif;
+}
+.header{
+    min-height:100vh;
+    width: 100%;
+    background-image:linear-gradient(rgba(4,9,30,0.7),rgba(110, 120, 165, 0.7)), url(images/world.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+nav img{
+    width: 150px;
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding:8px 12px;
+    position: relative;
+    font-size: 15px;
+}
+ul li a{
+    display:inline-block;
+}
+.nav-links ul li a{
+    color: #fff;
+    text-decoration: solid;
+    font-size: 20px;
+}
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #f44336;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+width: 100%;
+}
+.nav-links ul li.active a{
+    width: 100%;
+    color: #fff; 
+}
+.text-box{
+    width: 80%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    font-family: 'Sigmar One', cursive;
+}
+.text-box h1{
+    font-size: 100px;
+    font-family: 'Sigmar One', cursive;
+    color: rgb(111, 204, 247);
+}
+.text-box p{
+    font-size: 20px;
+
+}
+.visit-button{
+    display: inline-block;
+    text-decoration: none;
+    color:#0a0a0a;
+    border: 1px solid rgb(118, 179, 236);
+    padding: 10px 20px;
+    margin-top: 10px;
+    font-size: 15px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+.visit-button:hover{
+    border: 1px solid #f44336;
+    background-color: #f44336;
+    transition: 1s;
+}
+nav .fa{
+    display: none;
+}
+.footer{
+    width: 100%;
+    text-align: center;
+    padding: 25px 0;
+}
+.footer h4{
+    margin-bottom: 25px;
+    margin-top: 20px;
+    font-weight: 600;
+    color: #00bcd4;
+}
+.footer p{
+    color: #00bcd4;
+}
+.footer .fa{
+    color: #6fabdd;
+    margin: 0 13px;
+    cursor: pointer;
+    padding: 18px 0;
+}
+@media(max-width: 700px){
+    .text-box h1{
+        font-size: 30px;
+    }
+    .text-box p{
+        font-size: 10px;
+    };
+    .nav-links ul li{
+        display: block;
+    }
+    .nav-links{
+        position: absolute;
+        background: #f44336;
+        height: 100vh;
+        width: 150px;
+        top:0;
+        right: -150px;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+    }
+    nav .fa{
+        display: block;
+        color:#fff;
+        margin: 10px;
+        font-size: 22px;
+        cursor:pointer
+    }
+    .container .contactInfo .box {
+        margin-left: -98px;
+        margin-top: -20px;
+        padding: 20px;
+    }
+    .container
+    {
+        flex-direction: column;
+    }
+    .container .contactForm {
+        width: 120%;
+        padding: 40px;
+        background: #b8d4e4;
+    }
+    .cont{
+        flex-direction: column;
+    }
+    .about-us .body .aboutInfo .cont{
+        margin-left:-98px;
+        margin-top:-20px;
+        padding:20px;
+    }
+    .cont h3{
+        font-size: 15px;
+    }
+    .cont h5,p{
+        font-size: 10px;
+    }
+    .cont .skills button{
+        font-size: 5px;
+        padding: 2px 4px;
+        width: 50px;
+    }
+}
+
+
+/*CONTACT US */
+.contact{
+    height: 40vh;
+    width: 100%;
+   background-color: #333;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+}
+.contact-us{
+    box-sizing: border-box;
+    font-family: 'poppins',sans-serif;
+    position: relative;
+    min-height: 100vh;
+    padding: 50px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #fff;
+    
+    
+}
+
+.contact  h2{
+    font-size: 36px;
+    font-weight: 500;
+    color: #fff;
+    margin-top: 80px;
+    text-align: center;
+}
+.container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+.container .contactInfo{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.container .contactInfo .box{
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+}
+.container .contactInfo .box .icon{
+    min-width: 60px;
+    height: 60px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 22;
+}
+.container .contactInfo .box .text{
+    display: flex;
+    margin-left: 20px;
+    font-size: 16px;
+    color:#0a0a0a;
+    flex-direction: column;
+    font-weight: 300;
+}
+.container .contactInfo .box .text h3{
+    font-weight: 500;
+    color:#00bcd4;
+}
+.contactForm{
+    width: 40%;
+    padding: 40px;
+    background:#b8d4e4;
+}
+.contactForm h2
+{
+    font-size: 30px;
+    color: #333;
+    font-weight: 500;
+}
+.contactForm .inputBox{
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+}
+.contactForm .inputBox input,.contactForm .inputBox textarea{
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid #333;
+    outline: none;
+    resize: none;
+}
+.contactForm .inputBox span{
+    position: absolute;
+    left: 0;
+    padding:5px 0;
+    font-size:16px;
+    margin:10px 0;
+    pointer-events: none;
+    transition: 0.5s;
+    color: #666;
+}
+.contactForm .inputBox input:focus  ~ span,
+.contactForm .inputBox input:valid  ~ span,
+.contactForm .inputBox textarea:focus ~ span,
+.contactForm .inputBox textarea:valid ~ span
+{
+    color:#e91e63;
+    font-size: 12px;
+    transform: translateY(-20px);
+}
+.contactForm .inputBox input[type="SUBMIT"]
+{
+    width: 100px;
+    background: #353636;
+    color:#fff;
+    border: 10px;
+    cursor:pointer;
+    padding: 10px;
+    font-size: 18px;
+}
+
+/* ....ABOUT US....  */
+.About{
+    height: 40vh;
+    width: 100%;
+   background-color: #333;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+}
+.About  h2{
+    font-size: 36px;
+    font-weight: 500;
+    color: #fff;
+    margin-top: 80px;
+    text-align: center;
+}
+.about-us{
+    min-height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    box-sizing: border-box;
+}
+.about-us{
+    background: url(images/abput\ us.jpg) no-repeat left;
+    background-size: 55%;
+    background-color: #fff;
+    overflow: hidden;
+    padding: 100px 0px;
+   
+}
+.cont{
+    width: 55%;
+    float: right;
+    background-color:#fff;
+    padding: 100px;
+    box-shadow: 10px 10px 8px rgba(0,0,0,0.3);
+}
+.cont h3{
+   margin-bottom: 30px;
+   font-size: 30px;
+   font-weight: 900;
+}
+.skills button{
+    font-size: 22px;
+    text-align: center;
+    letter-spacing: 2px;
+    border: none;
+    border-radius: 20px; 
+    padding:10px;
+    width:200px;
+    background-color:#78c2f3;
+    color: white;
+    cursor: pointer;
+
+}
+.skills button:hover{
+    transition: 2s;
+    background-color: #90d7f3;
+    color:#1f2838;
+}
+
+/* Search css file */
+.search{
+    height: 40vh;
+    width: 100%;
+   background-color: #333;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+}
+.find{
+    min-height: 40vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    box-sizing: border-box;
+}
+.gobutton{
+    text-align: center;
+    margin-top: 20%;   
+}

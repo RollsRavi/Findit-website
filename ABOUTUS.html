@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="with=device-width, initial-scale=1.0">
+          <title>
+              FIND IT 
+          </title>
+          <link rel="stylesheet" href="style.css">
+          <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Crete+Round&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Sigmar+One&display=swap" rel="stylesheet">
+         </head>
+    <body>
+        <section class="About">
+            <nav>
+                <a href="HOME.html"><img src="images/findit.PNG"></a>
+                <div class="nav-links" id="navlinkss">
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="HOME.html">HOME</a></li>
+                        <li><a href="search.php"> SEARCH </a></li>
+                        
+                        <li><a href="CONTACT US.php">CONTACT US</a></li>
+                        <LI><a href="ABOUTUS.html">ABOUT US</a></LI>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+            </nav>
+                <h2>ABOUT US</h2>
+            
+            
+        </section>
+
+
+        <section class="about-us">
+            <div class="body">
+            <div class="aboutInfo">
+                <div class="cont">
+                        <h3>FIND IT</h3>
+                        <h5>BEST TO KNOW</h5>
+                        <P>BEST PLATFORM FOR THE PEOPLE TO KNOW ABOUT DIFFERENT PLACES OF ITS TOURIST SPOTS</P>
+               
+                <div class="skills">
+                    <button>Read More</button>
+                </div>      
+            </div>      
+            </div>
+            </div>
+        </section>
+        <section class="footer">
+            <h4>FIND IT</h4>
+            <P>BEST PLATFORM FOR THE PEOPLE TO KNOW ABOUT DIFFERENT PLACES OF ITS TOURIST SPOTS</P>
+            <div class="icons">
+                <i class="fa fa-facebook-square" aria-hidden="true"></i>
+                <i class="fa fa-instagram" aria-hidden="true"></i>
+                <i class="fa fa-twitter-square" aria-hidden="true"></i>
+            </div>
+            
+        </section>
+
+        <script>
+            var navlinkss=document.getElementById("navlinkss");
+            function showMenu(){
+                navlinkss.style.right="0";
+            }
+            function hideMenu(){
+                navlinkss.style.right="-200px";
+            }
+        </script>
+    </body>
+</html>
